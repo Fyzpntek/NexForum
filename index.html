@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexforum — Timeline</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <header class="app-header">
+    <h1 class="logo">Nexforum</h1>
+    <button id="logoutBtn" class="btn-ghost">Keluar</button>
+  </header>
+
+  <main class="app-main">
+    <section class="composer">
+      <textarea id="postContent" placeholder="Apa yang terjadi di Nexforum?" maxlength="280"></textarea>
+      <button id="postBtn" class="btn-primary">Kirim</button>
+    </section>
+
+    <section id="timelineList" class="stack"></section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html">🏠</a>
+    <a href="explore.html">🔎</a>
+    <a href="notifications.html">🔔</a>
+    <a href="profile.html">👤</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
