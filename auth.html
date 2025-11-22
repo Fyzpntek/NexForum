@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexforum — Login / Daftar</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="auth">
+
+  <h1 class="logo big" style="text-align:center;margin-top:24px;">Nexforum</h1>
+
+  <div class="tabs">
+    <button id="loginTab" class="active">Masuk</button>
+    <button id="registerTab">Daftar</button>
+  </div>
+
+  <form id="loginForm" class="auth-form">
+    <input name="username" placeholder="Username" required>
+    <input name="password" type="password" placeholder="Password" required>
+    <button class="btn-primary" type="submit">Masuk</button>
+  </form>
+
+  <form id="registerForm" class="auth-form hidden">
+    <input name="username" placeholder="Username" required>
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="password" type="password" placeholder="Password" required>
+    <button class="btn-primary" type="submit">Daftar</button>
+  </form>
+
+  <p id="authError" class="error"></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
